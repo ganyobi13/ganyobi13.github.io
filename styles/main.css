@@ -104,6 +104,11 @@ footer {
     margin: auto;
   }
 
+  main {
+    width: 1440px;
+    margin: auto;
+  }
+
   .card {
     width: 30%;
     margin-top: 2em;
