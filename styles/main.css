@@ -1,0 +1,143 @@
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+/* main header design*/
+header {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.main-title {
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+
+.main-title, .sub-title {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.description {
+  font-weight: 200;
+  font-size: 0.8rem;
+  color: hsl(229, 6%, 66%);
+}
+
+
+/* card design */
+.card {
+  background-color: white;
+  margin-top: 2em;
+  border-radius: 10px;
+  border-top-style: solid;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* top border of card design */
+#supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+#team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+#karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+#calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+
+/* Rest of card design */
+.card-text, .card-icon {
+  width: 80%;
+  margin: auto;
+}
+
+.card-icon img {
+  padding: 10% 0% 10% 75%;
+
+}
+
+.info {
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+
+/* Footer design */
+footer {
+  margin-top: 2.5em;
+}
+
+
+/* Media queries for small and large screens */
+
+/* Mobile design */
+@media screen and (max-width: 375px) {
+  body {
+    background-color: white;
+  }
+
+  header {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+/* Desktop design */
+@media screen and (min-width: 376px) {
+  header {
+    width: 40%;
+    margin: auto;
+  }
+
+  .card {
+    width: 30%;
+    margin-top: 2em;
+  }
+
+  /* position cards */
+
+  #team-builder {
+    position: absolute;
+    left: 35%;
+  }
+
+  #karma {
+    position: absolute;
+    left: 35%;
+    top: 65%;
+  }
+
+  #supervisor {
+    position: absolute;
+    left: 2%;
+    top: 45%;
+  }
+
+  #calculator {
+    position: absolute;
+    right: 2%;
+    top: 45%;
+  }
+
+  /* keep footer at bottom */
+  footer {
+    position: absolute;
+    top: 105%;
+    left: 39%;
+  }
+}
